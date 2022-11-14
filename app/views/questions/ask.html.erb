@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<div class="py-3 px-4">
+  <h1>Stupid Coaching</h1>
+    <p>Ask your coach anything<p>
+    <form action="/answer" data-turbo="false">
+      <div class="input-group mb-3">
+        <input type="text" name="question" value="<%= params[:question] %>">
+        <input type="submit" value="Ask" class="btn btn-primary" >
+      </div>
+    </form>
+</div>
+</html>
